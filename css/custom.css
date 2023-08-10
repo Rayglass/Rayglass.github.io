@@ -4,15 +4,20 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.headshot-container {
     text-align: center;
+    background-color: #333;
+    padding: 20px;
 }
 
-h1 {
-    margin: 0;
+.headshot {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.introduction {
+    margin-left: 10px;
 }
 
 nav {
@@ -30,4 +35,16 @@ nav a {
 section {
     padding: 50px;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .headshot {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .introduction {
+        margin-left: 0;
+    }
 }

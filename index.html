@@ -1,103 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<head>-->
-<!--    &lt;!&ndash;  Required Meta Tags &ndash;&gt;-->
-<!--    <meta charset="utf-8" />-->
-<!--    <meta http-equiv="x-ua-compatible" content="ie=edge" />-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<!--    &lt;!&ndash;  Bootstrap CSS &ndash;&gt;-->
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!--    &lt;!&ndash; Font Awesome &ndash;&gt;-->
-<!--    <script src="https://kit.fontawesome.com/0bb8b86cc6.js" crossorigin="anonymous"></script>-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
 
-<!--    &lt;!&ndash;  Custom CSS Styles &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="css/custom.css">-->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
-<!--    <title>@Raymond Glass Portfolio</title>-->
-<!--</head>-->
-<!--<body>-->
-<link rel="stylesheet" href="css/custom.css">
-<script src="js/custom.js"></script>
-<header>
-    <h1>My Portfolio</h1>
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Raymond Glass</title>
+</head>
+<body>
+<header class="header">
+    <a href="#">
+        <img class="logo" alt="RayGlass Log" src="img/RG.png" />
+    </a>
+
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Home</a></li>
+            <li><a class="main-nav-link" href="#how">My Journey</a></li>
+            <li><a class="main-nav-link" href="#projects">Projects</a></li>
+<!--            <li><a class="main-nav-link" href="#">Contact Me</a></li>-->
+
+        </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+<main>
+    <section class="section-hero" id="how">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                   Raymond Glass
+                </h1>
+                <p class="hero-description">
+                    “With technology, I am most passionate about creating robust and innovative solutions that address complex problems, while simultaneously focusing on user experience and overall system efficiency.“
+                </p>
+                <a href="#" class="btn btn--full margin-right-sm"
+                >Contact Me</a
+                >
+                <a href="#" class="btn btn--outline">Learn more &darr;</a>
+                <div class="delivered-meals">
+                    <p class="delivered-text">
+                        <span>125+</span> projects this year!
+                    </p>
+                </div>
+            </div>
+            <div class="hero-img-box">
+                <img
+                        src="img/hero.jpg"
+                        class="hero-img"
+                        alt="technology image"
+                />
+            </div>
+        </div>
+    </section>
 
-<section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is a showcase of my work and skills.</p>
-</section>
+    <section class="section-how">
+        <div class="container">
+            <span class="subheading">About Me</span>
+            <h2 class="heading-secondary">
+                My journey into Software Development
+            </h2>
+        </div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Analytical and detail-oriented full-stack developer with over 25 years of comprehensive organizational management and leadership experience with expertise in education, professional development, and project management. Ensures operational effectiveness through leadership of personnel and management of assets. Looking forward to leveraging over 20 years of Military experience combined with extensive knowledge within the classroom to find innovative ways to solve problems in an ever-evolving world of technology.</p>
-</section>
+        <div class="container grid grid--2-cols grid--center-v">
+            <!-- STEP 01 -->
+            <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h3 class="heading-tertiary">
+                    Chief Petty Officer - United States Navy
+                </h3>
+                <p class="step-description">
+                    Dedicated and accomplished Retired Navy Chief Aerographer's Mate with a distinguished career spanning over two decades of service in the United States Armed Forces. A proven leader, mentor, and subject matter expert in meteorology and environmental prediction, I have consistently demonstrated exceptional leadership and expertise across diverse operational environments. My extensive contributions to mission success, personnel development, and operational efficiency have left a lasting impact on the units I served.
+                </p>
+            </div>
 
-<section id="projects">
-    <h2>My Projects</h2>
-    <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-    </ul>
-</section>
+            <div class="step-img-box">
+                <img
+                        src="img/Navy.jpg"
+                        class="step-img"
+                        alt="US Navy Warship"
+                />
+            </div>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: raymond.allen.glass@gmail.com</p>
-    <p>Phone: 831.402.5139</p>
-</section>
-<!-- Start Container -->
+            <!-- STEP 02 -->
+            <div class="step-img-box">
+                <img
+                        src="img/teach.jpg"
+                        class="step-img"
+                        alt="Teaching Image"
+                />
+            </div>
+            <div class="step-text-box">
+                <p class="step-number">02</p>
+                <h3 class="heading-tertiary">Education and School Leadership</h3>
+                <p class="step-description">
+                    Driven and innovative educational professional with a passion for inspiring learners and fostering a culture of growth and excellence. Through my roles as a Coach, Teacher, and Vice Principal, I have consistently demonstrated a commitment to personalized coaching, transformative leadership, and cutting-edge instructional practices.
+                </p>
+            </div>
 
-<!-- Start Navigation Bar-->
-<!--<div class="container-fluid">-->
-<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--        &lt;!&ndash;    Container   &ndash;&gt;-->
-<!--        <div class="container-fluid">-->
-<!--            <a class="navbar-brand" href="#">@Raymond Glass</a>-->
+            <!-- STEP 03 -->
+            <div class="step-text-box">
+                <p class="step-number">03</p>
+                <h3 class="heading-tertiary">Software Developer</h3>
+                <p class="step-description">
+                    Passionate and skilled aspiring full stack developer with expertise in HTML, CSS, Bootstrap, JavaScript (including ES6 and jQuery), RESTful APIs, Java SE, Java EE (Servlets, JSP, J2EE), Spring Boot, Hibernate, MySQL, and Thymeleaf. Proficient in MVC architecture, Test-Driven Development (TDD), Git version control, AWS deployment, and unit testing (JUnit). Experienced in agile methodologies, paired programming, debugging, and collaborative teamwork. Additionally, well-versed in IT technical support, project management, and systems administration, with exposure to Office 365 administration, computer networking, IT security, and React.
+                </p>
+            </div>
+            <div class="step-img-box">
+                <img
+                        src="img/hero1.jpg"
+                        class="step-img"
+                        alt="Tech Image"
+                />
+            </div>
+        </div>
+    </section>
 
-<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+    <section class="section-meals" id="projects">
+        <div class="container center-text">
+            <span class="subheading">Projects</span>
+            <h2 class="heading-secondary" id="ProjectsHeading">
+                Some recent projects that I have worked on.
+            </h2>
+        </div>
 
-<!--                <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link text-muted" href="#">About Me</a>-->
-<!--                    </li>-->
+        <div class="container grid grid--3-cols margin-bottom-md">
+            <div class="meal">
+                <img
+                        src="img/geekguild.png"
+                        class="meal-img"
+                        alt="GeekGuild Project"
+                />
+                <div class="meal-content">
 
-<!--                    <li class="nav-item active">-->
-<!--                        <a class="nav-link active" aria-current="page" href="#">Portfolio</a>-->
-<!--                    </li>-->
+                    <p class="meal-title">Geek Guild</p>
+                    <p>..................................................................</p>
+                </div>
+            </div>
 
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link text-muted" href="#">Resume</a>-->
-<!--                    </li>-->
+            <div class="meal">
+                <img
+                        src="img/omni.png"
+                        class="meal-img"
+                        alt="Avocado Salad"
+                />
+                <div class="meal-content">
 
-<!--                </ul>-->
+                    <p class="meal-title">Omnifood Project</p>
+                    <p>..................................................................</p>
+                </div>
+            </div>
 
+
+            <div class="meal">
+                <img
+                        src="img/coffee.png"
+                        class="meal-img"
+                        alt="Coffee Project"
+                />
+                <div class="meal-content">
+
+                    <p class="meal-title">Coffee Project</p>
+                    <p>..................................................................</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section class="section-cta">-->
+<!--        <div class="container">-->
+<!--            <div class="cta">-->
+<!--                <div class="cta-text-box">-->
+<!--                    <h2 class="heading-secondary">Get your first meal for free!</h2>-->
+<!--                    <p class="cta-text">-->
+<!--                        Healthy, tasty and hassle-free meals are waiting for you. Start-->
+<!--                        eating well today. You can cancel or pause anytime. And the-->
+<!--                        first meal is on us!-->
+<!--                    </p>-->
+
+<!--                    <form class="cta-form" action="#">-->
+<!--                        <div>-->
+<!--                            <label for="full-name">Full Name</label>-->
+<!--                            <input-->
+<!--                                    id="full-name"-->
+<!--                                    type="text"-->
+<!--                                    placeholder="John Smith"-->
+<!--                                    required-->
+<!--                            />-->
+<!--                        </div>-->
+
+<!--                        <div>-->
+<!--                            <label for="email">Email address</label>-->
+<!--                            <input-->
+<!--                                    id="email"-->
+<!--                                    type="email"-->
+<!--                                    placeholder="me@example.com"-->
+<!--                                    required-->
+<!--                            />-->
+<!--                        </div>-->
+
+<!--                        <div>-->
+<!--                            <label for="select-where">Where did you hear from us?</label>-->
+<!--                            <select id="select-where" required>-->
+<!--                                <option value="">Please choose one option:</option>-->
+<!--                                <option value="friends">Friends and family</option>-->
+<!--                                <option value="youtube">YouTube video</option>-->
+<!--                                <option value="podcast">Podcast</option>-->
+<!--                                <option value="ad">Facebook ad</option>-->
+<!--                                <option value="others">Others</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+
+<!--                        <button class="btn btn&#45;&#45;form">Sign up now</button>-->
+
+<!--                        &lt;!&ndash; <input type="checkbox" />-->
+<!--                        <input type="number" /> &ndash;&gt;-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div-->
+<!--                        class="cta-img-box"-->
+<!--                        role="img"-->
+<!--                        aria-label="Woman enjoying food"-->
+<!--                ></div>-->
 <!--            </div>-->
 <!--        </div>-->
-<!--    </nav>-->
-<!--</div>-->
-<!--&lt;!&ndash; End Navigation Bar&ndash;&gt;-->
+<!--    </section>-->
+<!--</main>-->
 
+<!--<footer class="footer">-->
+<!--    <div class="container grid grid&#45;&#45;footer">-->
+<!--        <div class="logo-col">-->
+<!--            <a href="#" class="footer-logo">-->
+<!--                <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />-->
+<!--            </a>-->
 
+<!--            <ul class="social-links">-->
+<!--                <li>-->
+<!--                    <a class="footer-link" href="#"-->
+<!--                    ><ion-icon class="social-icon" name="logo-instagram"></ion-icon-->
+<!--                    ></a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="footer-link" href="#"-->
+<!--                    ><ion-icon class="social-icon" name="logo-facebook"></ion-icon-->
+<!--                    ></a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="footer-link" href="#"-->
+<!--                    ><ion-icon class="social-icon" name="logo-twitter"></ion-icon-->
+<!--                    ></a>-->
+<!--                </li>-->
+<!--            </ul>-->
 
-<!--&lt;!&ndash; End Container &ndash;&gt;-->
+<!--            <p class="copyright">-->
+<!--                Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.-->
+<!--            </p>-->
+<!--        </div>-->
 
+<!--        <div class="address-col">-->
+<!--            <p class="footer-heading">Contact us</p>-->
+<!--            <address class="contacts">-->
+<!--                <p class="address">-->
+<!--                    623 Harrison St., 2nd Floor, San Francisco, CA 94107-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    <a class="footer-link" href="tel:415-201-6370">415-201-6370</a-->
+<!--                    ><br />-->
+<!--                    <a class="footer-link" href="mailto:hello@omnifood.com"-->
+<!--                    >hello@omnifood.com</a-->
+<!--                    >-->
+<!--                </p>-->
+<!--            </address>-->
+<!--        </div>-->
 
-<!--&lt;!&ndash;Bootstrap JS&ndash;&gt;-->
+<!--        <nav class="nav-col">-->
+<!--            <p class="footer-heading">Account</p>-->
+<!--            <ul class="footer-nav">-->
+<!--                <li><a class="footer-link" href="#">Create account</a></li>-->
+<!--                <li><a class="footer-link" href="#">Sign in</a></li>-->
+<!--                <li><a class="footer-link" href="#">iOS app</a></li>-->
+<!--                <li><a class="footer-link" href="#">Android app</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
 
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+<!--        <nav class="nav-col">-->
+<!--            <p class="footer-heading">Company</p>-->
+<!--            <ul class="footer-nav">-->
+<!--                <li><a class="footer-link" href="#">About Omnifood</a></li>-->
+<!--                <li><a class="footer-link" href="#">For Business</a></li>-->
+<!--                <li><a class="footer-link" href="#">Cooking partners</a></li>-->
+<!--                <li><a class="footer-link" href="#">Careers</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
 
-<!-- Your custom JS goes here -->
-
-
+<!--        <nav class="nav-col">-->
+<!--            <p class="footer-heading">Resources</p>-->
+<!--            <ul class="footer-nav">-->
+<!--                <li><a class="footer-link" href="#">Recipe directory </a></li>-->
+<!--                <li><a class="footer-link" href="#">Help center</a></li>-->
+<!--                <li><a class="footer-link" href="#">Privacy & terms</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--</footer>-->
 </body>
 </html>

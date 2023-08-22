@@ -10,6 +10,11 @@ body {
     padding: 20px;
 }
 
+.logo-container {
+    padding: 10px;
+    margin: 10px;
+}
+
 .headshot {
     max-width: 150px;
     height: auto;
